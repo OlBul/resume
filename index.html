@@ -11,6 +11,22 @@
  </head>
  <body>
      <div class="wrapper">
+        <section class="contacts-section">
+            <a href="https://t.me/Olbulh" class="telegram-link">
+                <img src="img/icons/telegram-icon.svg" class="telegram-icon" alt="">
+            </a>
+            <a href="tel:+38000000000" class="viber-link">
+                <img src="img/icons/viber-icon.svg" class="viber-icon" alt="">
+            </a>
+            <a href="tel:+38000000000" class="phone-link-icon">
+                <img src="img/icons/phone-icon.svg" class="phone-icon" alt="">
+            </a>
+            <a href="tel:+38000000000" class="phone-link-number">
+                +38(000)000 00 00
+            </a>
+        </section>
+        <!-- /.contacts-section -->
+
         <section class="expirionce-section">
             <img src="img/photo.jpg" alt=""  class="my-foto">
             <div>
@@ -101,5 +117,33 @@
         </section>
         <!-- /.project-price -->
     </div>
+
+    <div class="modal-bgd">
+        <div class="modal-container">
+            <button class="modal-close-btn"> 
+                <img src="img/icons/close-icon.svg" alt="close icon">
+            </button>
+            <img src="img/icons/mail-icon.svg" alt="mail-icon" class="modal-icon">
+            <h4 class="modal-title">Я свяжусь с вами  на <br> протяжении ближайшего часа</h4>
+            <form action="" class="modal-container-form">
+                <label for="user-email" class="user-email-title">Email</label>
+                <input placeholder="Укажите e-mail" type="email" name="user-email" id="user-email">
+                
+                <button type="submit" class="modal-submit-button">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-bgd modal-active">
+        <div class="modal-container modal-container-success ">
+            <button class="modal-close-btn"> 
+                <img src="img/icons/close-icon.svg" alt="close icon">
+            </button>
+            <img src="img/icons/success-icon.svg" alt="success icon" class="modal-success-icon">
+            <p class="modal-success-massedge">Ваше сообщение <br> отправлено!</p>
+            
+
+        </div>
+    </div>    
  </body>
  </html>

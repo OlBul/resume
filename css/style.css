@@ -9,14 +9,16 @@
  }
 
  .wrapper {
+     position: relative;
      display: flex;
      flex-direction: row;
      padding: 80px;
+     justify-content: space-between;
  }
 
  /* ======= expirionce-section ========= */
  .expirionce-section {
-     width: 33%;
+     width: 268px;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -64,10 +66,11 @@
 
  .my-info-section {
     width: 33%;
-    margin-left: 70px;
+    margin: 0 25px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
  }
 
  .my-profession {
@@ -234,3 +237,156 @@
     border: none;
     outline: none;
  }
+
+/* ==== contacts-section === */
+ 
+.contacts-section {
+    position: absolute;
+    top: 35px;
+    right: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.phone-link-icon,
+.viber-link,
+.telegram-link {
+    text-decoration: none;
+}
+.phone-icon,
+.viber-icon,
+.telegram-icon {
+    width: 18px;
+    height: 18px;
+}
+.viber-icon,
+.telegram-icon {
+    margin-right: 15px;
+}
+.phone-icon {
+    margin-right: 20px;
+}
+.phone-link-number {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    text-decoration: none;
+}
+
+/* ===== modal-section ==== */
+
+.modal-bgd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    background: rgba(45, 45, 45, 0.9);   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.modal-active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.modal-container {    
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 110px 40px;
+    width: 364px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    height: 604px;
+}
+
+.modal-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #0A66C2;
+    margin-bottom: 40px;
+}
+
+.user-email-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    width: 100%;
+}
+
+.modal-container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#user-email {
+    margin-bottom: 115px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4F4F4F;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #4F4F4F;
+}
+
+
+.modal-submit-button{
+    background: #0A66C2;
+    border-radius: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 12px 29px;
+    border: none;
+    outline: none;
+}
+
+.modal-icon {
+    margin-bottom: 30px;
+}
+
+.modal-close-btn {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.modal-success-massedge {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #0A66C2;
+}
+
+.modal-container-success {
+    justify-content: center;
+}
+
+.modal-success-icon {
+    margin-bottom: 35px;
+}
