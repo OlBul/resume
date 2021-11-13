@@ -69,15 +69,15 @@
         <!-- my-info-section -->
 
         <section class="project-price">
-            <form action="#" class="project-price-form">
+            <form action="#" class="project-price-form" id="project-price-form">
                 <h4 class="project-price-title">Рассчитай стоимость проекта</h4>
                 <div class="project-type-container">
                     <label for="project-type" class="project-price-form-field-title">Тип сайта</label>
                     <select class="project-price-select" name="project-type" id="project-type">
                         <option value="landing-page">Landing page</option>
-                        <option value="landing-page">CMS</option>
-                        <option value="landing-page">Wordpress</option>
-                        <option selected value="landing-page">E-shop</option>
+                        <option value="online-store">Online Store</option>
+                        <option value="web-application">Web Application</option>
+                        <option selected value="mobile-application">Mobile Application</option>
                     </select>
                 </div>
 
@@ -106,7 +106,7 @@
                 
                 <div class="project-price-container">
                     <p class="project-price-form-field-title">Стоимость</p>
-                    <p class="project-price-sum"><span class="project-price-sum-currency">$</span> 2000</p>
+                    <p class="project-price-sum"><span class="project-price-sum-currency">$</span> <span id="total-price">0</span></p>
                 </div>
                 
                 <div class="project-price-culculate-btn-container">
@@ -134,7 +134,7 @@
         </div>
     </div>
 
-    <div class="modal-bgd modal-active">
+    <div class="modal-bgd">
         <div class="modal-container modal-container-success ">
             <button class="modal-close-btn"> 
                 <img src="img/icons/close-icon.svg" alt="close icon">
@@ -144,6 +144,8 @@
             
 
         </div>
-    </div>    
+    </div> 
+    
+    <script src="js/script.js"></script>
  </body>
  </html>
